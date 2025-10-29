@@ -50,9 +50,9 @@ p.ex1 {
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
-      <!-- Last commit time display -->
+    <!-- Last commit time display -->
   <div id="last-updated">Loading last update time...</div>
-<!-- Verify Button -->
+  <!-- Verify Button -->
   <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
   </button>
@@ -97,8 +97,8 @@ p.ex1 {
   </script>
 
  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+ <!-- ////////////////////////////// Word count function ////////////////////////////// -->
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
 <hr>
@@ -124,7 +124,7 @@ p.ex1 {
     const CoolingCount = displayWordCount("Cooling");
     const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + DownforceCount + DRSCount + CoolingCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -132,7 +132,7 @@ p.ex1 {
   window.onload = displayTotalWordCount;
 </script>
     
-  </body>
+</body>
   <hr>
 
   <!table of contents>
