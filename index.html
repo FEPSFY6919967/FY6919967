@@ -118,6 +118,7 @@ p.ex1 {
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction");
+    const IntroductionTextCount = displayWordCount("Introduction_Text");
     const AnalysisCount = displayWordCount("Analysis and Discussion");
     const DownforceCount = displayWordCount("Downforce");
     const DownforceTextCount = displayWordCount("Downforce_Text");
@@ -129,7 +130,7 @@ p.ex1 {
     const ConclusionTextCount = displayWordCount("Conclusion_Text");
 
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + DownforceCount + DownforceTextCount + DRSCount + DRSTextCount + CoolingCount + CoolingTextCount + ConclusionCount + ConclusionTextCount;
+    const totalWordCount = IntroductionCount + IntroductionTextCount + AnalysisCount + DownforceCount + DownforceTextCount + DRSCount + DRSTextCount + CoolingCount + CoolingTextCount + ConclusionCount + ConclusionTextCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
