@@ -215,16 +215,16 @@ p.ex1 {
 <div id="last-updated">Loading last update time...</div>
 
 <!-- Verify Button -->
-<button onclick="verifyLastUpdatedTime()" style="display: block; margun: 10px auto; padding: 8px 16px;">
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
 </button>
 
 <script>
-  async function getlastUpdatedTime() {
-      const unsername = 'FEPSFY6919967';
+  async function getLastUpdatedTime() {
+      const username = 'FEPSFY6919967';
       const repo = 'FY6919967';
 
-      const url = 'https://api.github.com/repo/${FEPSFY6919967}/${FY6919967}/commits';
+      const url = 'https://api.github.com/repos/${FEPSFY6919967}/${FY6919967}/commits';
 
       try {
           const response = await fetch(url, {
@@ -236,7 +236,7 @@ p.ex1 {
           if (!response.ok) {
               throw new Error('Error fetching date: ${response.status} - ${response.statusText}');
           }
-          const commits = await response response.json();
+          const commits = await response.json();
           if (commits && commits.length > 0) {
               const lastCommitDate = new Date(commits[0].commit.committer.date);
 
